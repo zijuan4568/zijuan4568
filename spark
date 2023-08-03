@@ -1,0 +1,18 @@
+sparks=new Array();
+	pow1=new Audio(s+"pow1.ogg");
+	pow2=new Audio(s+"pow2.ogg");
+	pow3=new Audio(s+"pow3.ogg");
+	pow4=new Audio(s+"pow4.ogg");
+	frames = 0;
+}
+ 
+function rasterizePoint(x,y,z){
+ 
+	var p,d;
+	x-=playerX;
+	y-=playerY;
+	z-=playerZ;
+	p=Math.atan2(x,z);
+	d=Math.sqrt(x*x+z*z);
+	x=Math.sin(p-yaw)*d;
+	z=Math.cos(p-yaw)*d;
