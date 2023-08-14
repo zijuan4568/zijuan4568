@@ -1,0 +1,10 @@
+ private static final int INDEX_COLUMN_FLAG_FORWARD = 1;
+    
+    private static final int INDEX_FLAG_UNIQUE_KEY = 0x01;
+    private static final int INDEX_FLAG_UNIQUE_INDEX = 0x02;
+    private static final int INDEX_FLAG_PERSISTENT = 0x04;
+    private static final int INDEX_FLAG_PRIMARY_INDEX = 0x08;
+
+    private static String SQL_SELECT_OPTIONS =
+            "SELECT name, value FROM " + TableSchema.SYS_INTERNAL
+            + " ORDER BY name"
