@@ -1,0 +1,6 @@
+ // Create activation and deactivation dates if provided 
+            Date activatedate = new Date(); 
+            Date deactivatedate = null; 
+ 
+			// Create and return a Sample User Implementation 
+            return new SampleUserImpl( 
